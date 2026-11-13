@@ -1,0 +1,11 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Loot sounds</title>
+<style>body{font:18px system-ui;max-width:520px;margin:2em auto;padding:0 1em}audio{width:100%;margin:.3em 0 1.2em}</style>
+<h1>Loot-collect options</h1>
+<div id="l"></div>
+<script>
+[["1_classic_da_ding","1 · Classic da-ding"],["2_star_drop","2 · Star drop"],["3_coin_cascade","3 · Coin cascade"],["4_magic_chime","4 · Magic chime"]]
+.forEach(([f,n])=>l.insertAdjacentHTML("beforeend",`<b>${n}</b><audio controls preload="auto" src="loot-sounds/${f}.wav"></audio>`));
+</script>
